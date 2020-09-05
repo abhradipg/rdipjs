@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="task_2.css">
+    <title>Task_2</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="input.js"></script>
+    <div class="container">
+         <div style="height:30px;"></div>
+         <form action="" onsubmit="return validateform()">
+         <div class="form-group">
+           <label for="name">Name</label>
+           <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+           <div class="alert alert-danger invalidname" role="alert">
+                Name can not start with digit.
+           </div>
+         </div>
+           <div class="form-group">
+           <label for="phone">Phone</label>
+           <input type="number" class="form-control" id="phone" placeholder="Enter phone no." required>
+           <div class="alert alert-danger invalidphone" role="alert">
+                Phone Number should be of 10 digits.
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="email">Email address</label>
+           <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+           <div class="alert alert-danger invalidemail" role="alert">
+                Has to have a ‘@’ followed by '.' 
+           </div>
+         </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+    </div>
+  </body>
+</html>
