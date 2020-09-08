@@ -585,7 +585,7 @@ function genRandom1(){
      }
 }
 function genRandom2(){
-  rnum2=Math.round((Math.random()*1000));
+  rnum2=Math.floor((Math.random()*1001));
   num2gen=1;
   $("#secondnum").text("Second Number - "+rnum2);
   if(num1gen==1&&num2gen==1)
